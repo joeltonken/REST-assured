@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/Welcome8",
+  "definitions": {
+    "Welcome8": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "quantidade": {
+          "type": "integer"
+        },
+        "produtos": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Produto"
+          }
+        }
+      },
+      "required": [
+        "produtos",
+        "quantidade"
+      ],
+      "title": "Welcome8"
+    },
+    "Produto": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "nome": {
+          "type": "string"
+        },
+        "preco": {
+          "type": "integer"
+        },
+        "descricao": {
+          "type": "string"
+        },
+        "quantidade": {
+          "type": "integer"
+        },
+        "_id": {
+          "type": "string"
+        },
+        "imagem": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "_id",
+        "descricao",
+        "nome",
+        "preco",
+        "quantidade"
+      ],
+      "title": "Produto"
+    }
+  }
+}
