@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "message": {"type": "string"},
+    "_id": {"type": "string"}
+  },
+  "additionalProperties": true,
+  "required": ["message", "_id"]
+}
